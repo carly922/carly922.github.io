@@ -1,10 +1,12 @@
 body {
     font-family: 'Comic Sans MS', monospace;
     background-color: aliceblue;
+    text-align: left;
 }
 h1 {
     font-size: 20px;
 }
 h2 {
     font-size: 15px;
+
 }
