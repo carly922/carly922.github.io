@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'MyCustomFont';
-    src: url('SuperMorning.ttf') format('truetype');
+    src: url('HugMeTight.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
@@ -34,13 +34,13 @@ h1 {
 
 h2 {
     font-family: 'MyCustomFont';
-    margin-top: 0;
+    margin-top: 0.5;
 }
 
 
 #mainColor{
-    width: 900px;
-    height: 450px;
+    width: calc(var(--page-width)/1.8);
+    height: calc(var(--page-height)*.8);
     position: absolute;
     top: 0;
     left: 0;
