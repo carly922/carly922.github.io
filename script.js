@@ -1,5 +1,3 @@
-const viewportWidth = window.innerWidth;
-const viewportHeight = window.innerHeight;
 
 import { animate, stagger, splitText } from 'https://esm.sh/animejs';
 
@@ -16,3 +14,17 @@ animate(chars, {
   delay: stagger(50),
   ease: 'inOutCirc',
 });
+
+function updatePageDimensions() {
+    const pageWidth = window.innerWidth;
+    const pageHeight = window.innerHeight;
+
+    document.documentElement.style.setProperty('--page-width', `${pageWidth}px`);
+    document.documentElement.style.setProperty('--page-height', `${pageHeight}px`);
+}
+
+// Run on page load
+window.addEventListener('DOMContentLoaded', updatePageDimensions);
+// Run on window resize
+window.addEventListener('resize', updatePageDimensions);
+
